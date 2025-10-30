@@ -7,15 +7,25 @@
 body {
   font-family: sans-serif;
   color: #265574;
-}
-
-main {
   width: auto;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   background-color: #F8F8F8;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: white;
+  text-align: center;
+  width: 800px;
+  padding: 32px;
+  border-radius: 0 0 10px 10px;
+}
+
+main {
+  display: flex;
 }
 
 .card {
@@ -86,4 +96,13 @@ form button {
   border-radius: 2px;
   margin-bottom: 24px;
   cursor: pointer;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1997F0;
+}
+
+footer a:active {
+  color: red;
 }
